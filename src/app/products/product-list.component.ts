@@ -31,10 +31,6 @@ export class ProductListComponent implements OnInit, OnDestroy {
     this.sub.unsubscribe();
   }
 
-  onAdd(): void {
-    console.log('Not yet implemented');
-  }
-
   onSelected(categoryId: string): void {
     console.log('Not yet implemented');
   }
