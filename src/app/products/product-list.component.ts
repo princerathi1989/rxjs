@@ -1,5 +1,5 @@
 import { catchError } from 'rxjs/operators';
-import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 import { Observable, of, EMPTY } from 'rxjs';
 
@@ -9,8 +9,7 @@ import { ThrowStmt } from '@angular/compiler';
 
 @Component({
   templateUrl: './product-list.component.html',
-  styleUrls: ['./product-list.component.css'],
-  changeDetection: ChangeDetectionStrategy.OnPush
+  styleUrls: ['./product-list.component.css']
 })
 export class ProductListComponent implements OnInit {
   pageTitle = 'Product List';
