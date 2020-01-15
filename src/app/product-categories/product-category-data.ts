@@ -5,15 +5,15 @@ export class ProductCategoryData {
   static categories: ProductCategory[] = [
     {
       id: 1,
-      name: 'Batting'
+      name: 'Batsman'
     },
     {
       id: 3,
-      name: 'Bowling'
+      name: 'Bowler'
     },
     {
       id: 5,
-      name: 'Wicket-Keeping'
+      name: 'Wicket Keeper'
     }
   ];
 }

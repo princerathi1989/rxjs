@@ -24,16 +24,6 @@ export class ProductData {
       supplierIds: [3, 4]
     },
     {
-      id: 5,
-      productName: 'Batting Pads',
-      productCode: 'BP-0048',
-      description: 'Moonwalker pads in different colors',
-      price: 3500,
-      categoryId: 1,
-      quantityInStock: 6,
-      supplierIds: [5, 6]
-    },
-    {
       id: 7,
       productName: 'Knee Support',
       productCode: 'KS-0022',
@@ -62,6 +52,16 @@ export class ProductData {
       categoryId: 5,
       quantityInStock: 12,
       supplierIds: [9, 10]
+    },
+    {
+      id: 5,
+      productName: 'Batting Pads',
+      productCode: 'BP-0048',
+      description: 'Moonwalker pads in different colors',
+      price: 3500,
+      categoryId: 1,
+      quantityInStock: 6,
+      supplierIds: [5, 6]
     },
     {
       id: 10,
