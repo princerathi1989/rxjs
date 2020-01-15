@@ -14,7 +14,7 @@ export class ProductListComponent {
   errorMessage = '';
   categories;
 
-  products$ = this.productService.productWithCategory$
+  products$ = this.productService.products$
   .pipe(
     catchError(err => {
       this.errorMessage = err;
