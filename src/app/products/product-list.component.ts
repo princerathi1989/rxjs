@@ -1,11 +1,9 @@
-import { catchError } from 'rxjs/operators';
 import { Component, OnInit } from '@angular/core';
 
-import { Observable, of, EMPTY } from 'rxjs';
+import {  Observable } from 'rxjs';
 
 import { Product } from './product';
 import { ProductService } from './product.service';
-import { ThrowStmt } from '@angular/compiler';
 
 @Component({
   templateUrl: './product-list.component.html',
@@ -21,13 +19,7 @@ export class ProductListComponent implements OnInit {
   constructor(private productService: ProductService) { }
 
   ngOnInit(): void {
-    this.products$ = this.productService.getProducts()
-    .pipe(
-      catchError(err => {
-        this.errorMessage = err;
-        return EMPTY;
-      })
-    );
+    this.products$ = this.productService.getProducts();
   }
 
   onSelected(categoryId: string): void {
